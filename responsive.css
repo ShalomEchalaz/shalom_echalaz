@@ -10,8 +10,8 @@
   /* accent text: */
     --fancy-font: 'Sofia', optima;
   /* links: */
-    --link-color:#FBFFEE;
-    --hover: #617969;
+    --link-color:#D5CFE6;
+    --hover: #FDEBF3;
   /* navbar links: */
     --highlight: #FBFFEE; /* active bg color */
     --active: #617969 /* active text color */
