@@ -19,7 +19,7 @@
 }
 
 html {
-   background: var(--main-bg) no-repeat center top fixed;
+   background: url("Mei.JPEG") no-repeat center top fixed;
    background-size: cover;
    background-color: var(--bg-2);
 }
