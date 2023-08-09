@@ -1,6 +1,7 @@
 
 /* minor changes to the design can all be made in this block */
 :root {
+  --bg-imge: url('Mei.JPEG');
   /* background image: */
     --background-image: url("Mei.JPEG");
   /* background color to show while loading + just in case: */
