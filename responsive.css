@@ -1,9 +1,9 @@
 /* minor changes to the design can all be made in this block */
 :root {
   /* background image: */
-    --main-bg: "Mei.JPEG";
+    --background-image: url("Mei.JPEG");
   /* background color to show while loading + just in case: */
-    --bg-2: #84A59D;
+    --background-color: #84A59D;
   /* main body text: */
     --text-color: #FBFFEE;
     --main-font: 'Nunito',optima;
