@@ -1,83 +1,113 @@
-
 /* minor changes to the design can all be made in this block */
 :root {
-  /* background image: */
-  /* background color to show while loading + just in case: */
-    --background-color: #84A59D;
-  /* main body text: */
-    --text-color: #FBFFEE;
-    --main-font: 'Nunito',optima;
-  /* accent text: */
-    --fancy-font: 'Sofia', optima;
-  /* links: */
-    --link-color:#D5CFE6;
-    --hover: #FDEBF3;
-  /* navbar links: */
-    --highlight: #FBFFEE; /* active bg color */
-    --active: #617969 /* active text color */
+   /* background image: */
+   /* background color to show while loading + just in case: */
+   --background-color: #84A59D;
+   /* main body text: */
+   --text-color: #FBFFEE
+   --main-font: 'Nunito', optima;
+   /* accent text: */
+   --fancy-font: 'Sofia', optima;
+   /* links: */
+   --link-color: rgba(230, 54, 145, .8);
+   --hover: #FDEBF3;
+   /* navbar links: */
+   --highlight: #FBFFEE;
+   /* active bg color */
+   --active: #617969
+      /* active text color */
 }
 
 html {
-   background-size: cover;
+   < !--text-color: #FBFFEE;
+   >background-size: cover;
    background-color: var(--bg-2);
 }
 
 body {
+   text-color: #FBFFEE
    height: 100%;
    font-family: var(--main-font);
    margin: 0;
    padding: 0px 0px 30px 0px;
 }
 
-div {
-}
+div {}
+
 .content {
-   background: url('Mei.JPEG') top;
-   height: 100vh;
+   text-color: #FBFFEE
+   height: 25vh;
    margin-left: 25%;
    color: var(--text-color);
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: left;
+
 }
+
 .content img {
    max-width: 30%;
    margin: 20px;
 }
+
 .content img.left {
    max-width: 20%;
    float: left;
    margin: 20px;
 }
+
 .content img.right {
    max-width: 20%;
    float: right;
    margin: 20px;
 }
+
 .transparent {
+   text-color: #FBFFEE;
    margin: 20px;
-   background-color: rgba(0,0,0,0.8);
+   background-color: rgba(0, 0, 0, 0.8);
 }
+
 .transparent::after {
+   text-color: #FBFFEE;
    content: "";
    clear: both;
    display: table;
 }
+
 .main {
    margin: 20px;
 }
-.EDUARDO{
-   background-color: pink;
+
+.EDUARDO {
+   height: 25vh;
+   margin: 20px;
+   background-color: rgba(255, 255, 255, 0.8); 
+   margin-left: 60%;
 }
 
-ul {
+.sidenav2 {
+   list-style-type: none;
+   margin: 0%;
+   padding: 0;
+   width: 25%;
+   background: url('Mei.JPEG') top;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: bottom left;
+   position: fixed;
+   left: 25%;
+   top: 0;
+   bottom: 100%;
+   height: 110%;
+   text-align: center;
 }
+
+ul {}
+
 .sidenav {
    list-style-type: none;
    margin: 0;
    padding: 0;
    width: 25%;
-   background-color: rgba(0,0,0,.8);
+   background-color: rgba(0, 0, 0, .8);
    position: fixed;
    left: 0;
    top: 0;
@@ -85,12 +115,14 @@ ul {
    overflow: auto;
    text-align: center;
 }
-.sidenav li{
+
+.sidenav li {
    color: var(--link-color);
    font-family: var(--fancy-font);
    font-size: 20px;
 }
-.sidenav li a{
+
+.sidenav li a {
    display: block;
    color: var(--link-color);
    padding-top: 10px;
@@ -99,14 +131,17 @@ ul {
    font-family: var(--fancy-font);
    font-size: 20px;
 }
+
 .sidenav li a.active {
    background-color: var(--highlight);
    color: var(--active);
 }
+
 .sidenav li a:hover {
    background-color: var(--hover);
    color: var(--link-color);
 }
+
 .sidenav li img {
    width: 50%;
    margin: auto;
@@ -138,6 +173,7 @@ a {
    color: var(--link-color);
    text-decoration: none;
 }
+
 a:hover {
    color: var(--hover);
 }
@@ -150,38 +186,45 @@ footer {
    padding-top: 0px;
    margin-top: 0px;
    margin-right: 20px;
-   background-color: rgba(0,0,0,.8);
+   background-color: rgba(0, 0, 0, .8);
 }
+
 footer ul {
    margin: 0;
    padding: 0;
    list-style-type: none;
 }
+
 footer ul li {
    display: inline;
    padding: 5px;
 }
 
 @media all and (max-width: 600px) {
-  ul.sidenav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  
-  ul.sidenav li a {
-    float: left;
-    padding: 15px;
-    font-size: 14px;
-  }
+   ul.sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+   }
 
-  div.content {margin-left: 0;}
+   ul.sidenav li a {
+      float: left;
+      padding: 15px;
+      font-size: 14px;
+   }
+
+   div.content {
+      margin-left: 0;
+   }
 }
 
 @media all and (max-width: 400px) {
-  h1 {font-size: 30px;}
-  ul.sidenav li a {
-    text-align: center;
-    float: none;
-  }
+   h1 {
+      font-size: 30px;
+   }
+
+   ul.sidenav li a {
+      text-align: center;
+      float: none;
+   }
 }
